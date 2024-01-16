@@ -9,7 +9,7 @@ export const MovieList = () => {
     return (
         <main>
             <section className="max-w-7xl mx-auto py-7">
-                <div className="flex justify-center flex-wrap">
+                <div className="flex justify-center flex-wrap other:justify-evenly">
                     {movies.map((movie) => (
                         <Card key={movie.id} movie={movie}/>
                     ))}
