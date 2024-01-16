@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 
-
 export const Card = ({movie}) => {
     const {episode_id, director, producer, title} = movie;
     const movieData = [
@@ -36,19 +35,17 @@ export const Card = ({movie}) => {
     return (
 
         <div
-            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3 ">
-            <Link to={`/movie/`}>
+            className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
+            <Link to={`/movie/${episode_id}`}>
                 {images && <img className="rounded-t-lg" src={images} alt={`${title}`}/>}
             </Link>
             <div className="p-5">
-                <Link to={`/movie/`}>
+                <Link to={`/movie/${episode_id}`}>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
                 </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Director : {director} </p>
 
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Producer : {producer} </p>
 
             </div>
         </div>
