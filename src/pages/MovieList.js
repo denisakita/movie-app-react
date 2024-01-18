@@ -1,9 +1,9 @@
 import {Card} from "../components";
 import {useFetch} from "../hooks/useFetch";
 
-export const MovieList = () => {
+export const MovieList = (baseUrl) => {
 
-    const {data: movies} = useFetch("https://swapi.dev/api/films/");
+    const {data: movies} = useFetch(baseUrl);
 
 
     return (

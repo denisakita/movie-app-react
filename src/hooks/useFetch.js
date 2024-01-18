@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
 
-export const useFetch = (url) => {
+export const useFetch = (baseUrl, queryTerm = "") => {
 
     const [data, setData] = useState([]);
+    const url = `https://swapi.dev/api/films/?&query=${queryTerm}`
 
     useEffect(() => {
         async function fetchMovies() {
