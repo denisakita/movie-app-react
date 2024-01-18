@@ -10,9 +10,10 @@ export const PageNotFound = () => {
                 <div className="flex justify-center my-4 max-w-lg">
                     <img className="w-50px" src={PageNotFoundImage} alt="Page Not Found"/>
                 </div>
-                <div className=" flex justify-center py-6">
-                    <Link to="/"></Link>
-                    <Button>Back to Movie Future</Button>
+                <div className="flex justify-center my-4">
+                    <Link to="/">
+                        <Button>Back To Cinemate</Button>
+                    </Link>
                 </div>
             </section>
         </main>
