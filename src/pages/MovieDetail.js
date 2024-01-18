@@ -1,12 +1,12 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {useTitle} from "../hooks/useTitle";
 
 
 export const MovieDetail = () => {
     const params = useParams();
     const [movie, setMovie] = useState({});
-
-    // const {data: movies} = useFetch(baseUrl);
+    const pageTitle = useTitle(movie.title);
 
 
     useEffect(() => {

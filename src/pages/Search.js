@@ -1,13 +1,16 @@
 import React from "react";
-import { useFetch } from "../hooks/useFetch";
-import { Card } from "../components";
-import { useSearchParams } from "react-router-dom";
+import {useFetch} from "../hooks/useFetch";
+import {Card} from "../components";
+import {useSearchParams} from "react-router-dom";
+import {useTitle} from "../hooks/useTitle";
 
-export const Search = ({ baseUrl }) => {
+export const Search = ({baseUrl}) => {
     const [searchParams] = useSearchParams();
     const queryTerm = searchParams.get("q");
 
-    const { data: movies } = useFetch(baseUrl, queryTerm);
+    const {data: movies} = useFetch(baseUrl, queryTerm);
+
+    const pageTitle = useTitle(`Search result for ${queryTerm}`);
 
     return (
         <main>
@@ -24,7 +27,7 @@ export const Search = ({ baseUrl }) => {
                 <div className="flex justify-start flex-wrap">
                     {movies &&
                         movies.map((movie) => (
-                            <Card key={movie.id} movie={movie} />
+                            <Card key={movie.id} movie={movie}/>
                         ))}
                 </div>
             </section>

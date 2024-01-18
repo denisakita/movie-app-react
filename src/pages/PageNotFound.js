@@ -1,8 +1,14 @@
 import PageNotFoundImage from "../assets/images/pagenotfound.jpg";
 import {Link} from "react-router-dom";
 import {Button} from "../components";
+import {useEffect} from "react";
 
 export const PageNotFound = () => {
+
+    useEffect(() => {
+        document.title = `Page Not Found`;
+    });
+
 
     return (
         <main>
