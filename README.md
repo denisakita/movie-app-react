@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Movie Future - Movie Information App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Movie Future, a project that takes you on a journey into the world of movies. Whether you call it Movie Future or something else, this multipage application is designed to provide information about popular, top-rated, and upcoming movies. The project focuses not only on the data but also on the building process, utilizing The Movie Database (TMDB) API for developers.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+- **Popular Movies:** Explore a collection of currently popular or playing movies.
+- **Top Rated Movies:** Discover the highest-rated movies available.
+- **Upcoming Movies:** Get a sneak peek into the upcoming releases.
 
-### `npm start`
+## TMDB API Integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Movie Future leverages the TMDB API, a developer-friendly platform similar to IMDb. Through this API, you can access detailed information about each movie, including title, image, quick overview, category, review, runtime, budget, and more. The project even provides a quick IMDb link for additional information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Multi-page Navigation:** Utilizes React Router for seamless navigation between pages.
+- **Search Functionality:** Easily search for movies and get related information.
+- **Responsive Design:** The entire app is responsive, ensuring a seamless experience across devices.
+- **Dark Mode/Light Mode:** Experiment with different themes and observe changes in text colors and overall aesthetics.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Concepts Explored
 
-### `npm run build`
+This project is a great opportunity to revise and learn new concepts, including:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Routes:** Utilizing React Router for multipage functionality.
+- **API Integration:** Fetching data from TMDB API for dynamic content.
+- **Tailwind CSS:** Configuring and implementing Tailwind CSS for styling.
+- **Dark Mode/Light Mode:** Exploring theme variations for enhanced user experience.
+- **Environment Variables:** Storing API keys securely using environment files.
+- **Responsive Design:** Ensuring the app looks good on various screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before diving in, make sure to create your project file. The basic setup involves removing unnecessary files, setting up the folder structure, adding images, and updating the favicon.
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the project is complete, deployment is straightforward. Push your code to GitHub, and it will automatically deploy to Vercel or Netlify. Any future updates can be seamlessly integrated with a single command.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the Repository:**
+   ```bash
+   git clone git@github.com:denisakita/movie-app-react.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install Dependencies:**
+   ```bash
+   cd movie-app-react
+   npm install
+   ```
 
-## Learn More
+3. **Run the Development Server:**
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open in Your Browser:**
+   Visit [http://localhost:3000](http://localhost:3000) to explore Movie Future.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribution
 
-### Code Splitting
+Feel free to contribute, report issues, or suggest enhancements. Your support is valuable in making Movie Future an engaging and informative movie app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for joining this exciting journey into the world of movies! 🎬🍿
