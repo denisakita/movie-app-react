@@ -6,7 +6,7 @@ import {useTitle} from "../hooks/useTitle";
 export const MovieDetail = () => {
     const params = useParams();
     const [movie, setMovie] = useState({});
-    const pageTitle = useTitle(movie.title);
+    useTitle(movie.title);
 
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export const MovieDetail = () => {
             }
 
             fetchMovie();
-        }, []
+        }, [params.episode_id]
     )
 
     return (

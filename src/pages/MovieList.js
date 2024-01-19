@@ -5,7 +5,7 @@ import {useTitle} from "../hooks/useTitle";
 export const MovieList = ({baseUrl, title}) => {
 
     const {data: movies} = useFetch(baseUrl);
-    const pageTitle = useTitle(title);
+    useTitle(title);
 
 
     return (
